@@ -1,0 +1,17 @@
+-- Projet réseau social MeeThem :
+
+	Fonctionnalités :
+
+	- Créer un compte unique (e-mail)
+	- Se connecter à un compte existant avec e-mail et mdp
+	- Sélectionner des centres d'intérêt parmi une liste proposée
+	- Consulter des articles via un fil d'actualité en scrollant alimenté par la
+	  communauté utilisant l'appli (BDD préalimenté pour le projet), en fonction
+	  des centres d'intérêt.
+	- Posté un article (possibilité texte + image) qui s'ajoutera au fil d'actualité des users qui auront ce centre d'intérêt
+	- Possibilité de réagir et commenté un article
+
+	Nice to have :
+
+	- Liste d'amis
+	- Conversations privées
