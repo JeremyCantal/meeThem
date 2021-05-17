@@ -9,7 +9,9 @@
         - Page 6 => Paramètres -> Modifier ses centres d'intérêt / se déconnecter
         - Page 7 => Voir mes publications
 
+    Trello : https://trello.com/b/358hQKQx/meethem
 
+	Descriptif :
 
 
 
