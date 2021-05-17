@@ -12,7 +12,10 @@
     Trello : https://trello.com/b/358hQKQx/meethem
 
 	Descriptif :
-
+        Réseau social orienté sur les centres d'intérêt communs aux utilisateurs.
+        Le fil d'actualité affiche des articles publiés par d'autres utilisateurs en
+        fonction d'intérêt communs.
+        L'utilisateur peut aussi publier un article en sélectionnant le ou les centres d'intérêt et y ajouter un contenu (texte + photo).
 
 
 
