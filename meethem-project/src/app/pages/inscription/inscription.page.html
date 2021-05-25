@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align:center;">meeThem</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h1 style="text-align:center;">Inscription</h1>
+
+  <form [formGroup]="ionicForm" (ngSubmit)="submitForm()" novalidate>
+    <ion-item lines="full">
+      <ion-label position="floating">Prénom</ion-label>
+      <ion-input formControlName="name" type="text"></ion-input>
+    </ion-item>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.name.errors?.required">
+      Votre prénom est requis.
+    </span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.name.errors?.minlength">
+      Votre prénom doit contenir au moins 2 caratères.
+    </span>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Nom</ion-label>
+      <ion-input formControlName="lastname" type="text"></ion-input>
+    </ion-item>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.lastname.errors?.required">
+      Votre nom est requis.
+    </span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.lastname.errors?.minlength">
+      Votre nom doit contenir au moins 2 caratères.
+    </span>
+
+    <ion-item lines="full">
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input formControlName="email" type="email"></ion-input>
+    </ion-item>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.required">
+      Votre e-mail est requis.
+    </span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.pattern">
+      Veuillez entrer un e-mail valide.
+    </span>
+
+    <ion-item>
+      <ion-label>Mot de passe : </ion-label>
+      <ion-textarea formControlName="password"></ion-textarea>
+    </ion-item>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.password.errors?.required">
+      Votre mot de passe est requis.
+    </span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.password.errors?.pattern">
+      Votre mot de passe doit contenir au moins 6 caratères.
+    </span>
+
+    <ion-row>
+      <ion-col style="text-align:center;">
+        <a routerLink="../connexion"><ion-button color="danger">Annuler</ion-button></a>
+        <a routerLink="../preferences"><ion-button type="submit" color="primary" [disabled]="!ionicForm.valid">S'inscrire</ion-button></a>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
