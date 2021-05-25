@@ -20,10 +20,22 @@
         <ion-label>E-mail : </ion-label>
         <ion-textarea formControlName="email"></ion-textarea>
       </ion-item>
+      <span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.required">
+        Votre e-mail est requis.
+      </span>
+      <span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.pattern">
+        Veuillez entrer un e-mail valide.
+      </span>
       <ion-item>
         <ion-label>Password : </ion-label>
         <ion-textarea formControlName="password"></ion-textarea>
       </ion-item>
+      <span class="error ion-padding" *ngIf="isSubmitted && errorControl.password.errors?.required">
+        Votre mot de passe est requis.
+      </span>
+      <span class="error ion-padding" *ngIf="isSubmitted && errorControl.password.errors?.pattern">
+        Votre mot de passe doit contenir au moins 6 caratères.
+      </span>
       <a routerLink="../home"><button type="submit" mdc-button raised style="width:100%" [disabled]="!form.valid">Se connecter</button></a>
     </form>
     <br>

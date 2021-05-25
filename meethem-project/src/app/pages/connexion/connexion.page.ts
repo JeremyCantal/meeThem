@@ -13,8 +13,8 @@ export class ConnexionPage implements OnInit {
 
   constructor(private router: Router, private route: ActivatedRoute, private formBuilder: FormBuilder) { 
     this.form = this.formBuilder.group({
-      email: ['', Validators.required],
-      password: [''],
+      email: ['', [Validators.required, Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$')]],
+      password: ['', [Validators.required, Validators.minLength(6)]],
     });
   }
 
