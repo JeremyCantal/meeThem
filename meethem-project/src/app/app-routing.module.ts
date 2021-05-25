@@ -30,7 +30,11 @@ const routes: Routes = [
   {
     path: 'ma-page',
     loadChildren: () => import('./pages/ma-page/ma-page.module').then( m => m.MaPagePageModule)
+  },  {
+    path: 'parametres',
+    loadChildren: () => import('./pages/parametres/parametres.module').then( m => m.ParametresPageModule)
   },
+
 ];
 
 @NgModule({
