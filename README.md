@@ -18,6 +18,12 @@
         L'utilisateur peut aussi publier un article en sélectionnant le ou les centres d'intérêt et y ajouter un contenu (texte + photo).
 
 
+    Jour 1 :
+        Création de l'architecture de l'application :
+        - les pages (connexion, inscription, préferences, paramètres, Ma page)
+        - Ajout du contenu Html et des chemins (connexion, inscription, préferences, paramètres)
+        - Mise en place des validators sur les formulaires (connexion et inscription)
+
 
 
 
