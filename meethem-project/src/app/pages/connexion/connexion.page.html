@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align:center;">
+      meeThem
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>Connexion</strong>
+    <form [formGroup]="form" (ngSubmit)="saveUser()">
+      <ion-item>
+        <ion-label>E-mail : </ion-label>
+        <ion-textarea formControlName="email"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label>Password : </ion-label>
+        <ion-textarea formControlName="password"></ion-textarea>
+      </ion-item>
+      <a routerLink="../home"><button type="submit" mdc-button raised style="width:100%" [disabled]="!form.valid">Se connecter</button></a>
+    </form>
+    <br>
+    <p>Pas encore inscrit ? <br> <a rel="noopener noreferrer" routerLink="../inscription">Créer un compte</a></p>
+  </div>
+</ion-content>
