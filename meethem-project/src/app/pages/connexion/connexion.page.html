@@ -7,14 +7,9 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+  <h1 style="text-align:center;">Connexion</h1>
   <div id="container">
-    <strong>Connexion</strong>
+    
     <form [formGroup]="form" (ngSubmit)="saveUser()">
       <ion-item>
         <ion-label>E-mail : </ion-label>
@@ -36,7 +31,7 @@
       <span class="error ion-padding" *ngIf="isSubmitted && errorControl.password.errors?.pattern">
         Votre mot de passe doit contenir au moins 6 caratères.
       </span>
-      <a routerLink="../home"><button type="submit" mdc-button raised style="width:100%" [disabled]="!form.valid">Se connecter</button></a>
+      <button routerLink="../home" type="submit" mdc-button raised style="width:100%" [disabled]="!form.valid">Se connecter</button>
     </form>
     <br>
     <p>Pas encore inscrit ? <br> <a rel="noopener noreferrer" routerLink="../inscription">Créer un compte</a></p>
