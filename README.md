@@ -18,7 +18,17 @@
         L'utilisateur peut aussi publier un article en sélectionnant le ou les centres d'intérêt et y ajouter un contenu (texte + photo).
 
 
+    Jour 1 :
+        Création de l'architecture de l'application :
+        - les pages (connexion, inscription, préferences, paramètres, Ma page)
+        - Ajout du contenu Html et des chemins (connexion, inscription, préferences, paramètres)
+        - Mise en place des validators sur les formulaires (connexion et inscription)
 
+    Jour 2 :
+        Ajout des CRUD et recherche + multilples essais pour le serveur.
+
+    Jour 3 :
+        Mise en place du serveur (lien git : https://github.com/JeremyCantal/meeThem_server.git) et liaison avec l'app
 
 
 

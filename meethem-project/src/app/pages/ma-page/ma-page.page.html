@@ -5,5 +5,20 @@
 </ion-header>
 
 <ion-content>
+  <div id="container">
+    <ion-list>
+      <ion-list-header>
+        Users
+      </ion-list-header>
 
+      <ion-item lines="inset" *ngFor="let data of users">
+        <ion-label>
+          <h5>{{data.userid}}</h5>
+          <p>{{data.name}}</p>
+          <p>{{data.lastname}}</p>
+          <p>{{data.email}}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>
