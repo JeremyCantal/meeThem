@@ -30,6 +30,8 @@
     Jour 3 :
         Mise en place du serveur (lien git : https://github.com/JeremyCantal/meeThem_server.git) et liaison avec l'app
 
+    Jour 4 : 
+        Commencement  du CRUD post et correction de code
 
 
         
