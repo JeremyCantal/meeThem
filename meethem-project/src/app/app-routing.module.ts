@@ -34,6 +34,10 @@ const routes: Routes = [
     path: 'parametres',
     loadChildren: () => import('./pages/parametres/parametres.module').then( m => m.ParametresPageModule)
   },
+  {
+    path: 'user-details',
+    loadChildren: () => import('./pages/user-details/user-details.module').then( m => m.UserDetailsPageModule)
+  },
 
 ];
 

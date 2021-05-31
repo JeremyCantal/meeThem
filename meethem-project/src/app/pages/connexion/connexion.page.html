@@ -10,7 +10,7 @@
   <h1 style="text-align:center;">Connexion</h1>
   <div id="container">
     
-    <form [formGroup]="form" (ngSubmit)="saveUser()">
+    <form [formGroup]="form" (ngSubmit)="findUserById()">
       <ion-item>
         <ion-label>E-mail : </ion-label>
         <ion-textarea formControlName="email"></ion-textarea>
